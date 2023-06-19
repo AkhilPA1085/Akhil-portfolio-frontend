@@ -12,7 +12,7 @@ const Navbar = () => {
             href="/"
             className="brand font-bold capitalize text-3xl text-titleColor"
           >
-            nav
+            Akhil
           </Link>
           <div className="social-links flex items-center justify-between gap-5">
             <Link
