@@ -1,10 +1,7 @@
-"use client";
 import "./globals.css";
 import { Kumbh_Sans } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { useEffect, useState } from "react";
-import PreLoader from "./components/PreLoader";
 
 const kumb = Kumbh_Sans({
   weight: ["400", "700", "300"],
