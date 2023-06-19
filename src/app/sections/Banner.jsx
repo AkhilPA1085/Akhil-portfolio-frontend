@@ -14,7 +14,7 @@ const Banner = async () => {
     }, 2000);
   }, []);
 
-  const jsondata = await getData("/banners?populate=*");
+  const jsondata = await getData("/api/banners?populate=*");
   const data = jsondata?.data;
   return (
     <div className="banner bg-bgColor md:h-screen w-full pt-24 relative">
@@ -76,7 +76,7 @@ const Banner = async () => {
               <Image
                 height={500}
                 width={500}
-                src={process.env.NEXT_PUBLIC_UPLOAD_URL + image}
+                src={process.env.NEXT_PUBLIC_API_URL + image}
                 alt=""
               />
             </div>

@@ -4,7 +4,7 @@ import Card from "../components/Card";
 import { getData } from "../../../services/api";
 
 const Projects = async() => {
-  const jsondata = await getData("/projects?populate=*");
+  const jsondata = await getData("/api/projects?populate=*");
   const data = jsondata?.data;
   return (
     <div className="projects pt-24">

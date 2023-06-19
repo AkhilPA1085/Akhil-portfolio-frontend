@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Project = async ({ params: { projectId } }) => {
-  const jsondata = await getData(`/projects/${projectId}`);
+  const jsondata = await getData(`/api/projects/${projectId}`);
   const data = jsondata?.data;
   return (
     <div className="single-project pt-24">

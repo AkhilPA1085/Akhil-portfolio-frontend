@@ -26,7 +26,7 @@ const ContactForm = () => {
     };
 
     try {
-    const response = await postData('/messages',formData)
+    const response = await postData('/api/messages',formData)
 
       if (!response.ok) {
         throw new Error("Error submitting form data");

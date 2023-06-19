@@ -8,7 +8,7 @@ const Card = ({ data }) => {
     <MotionAnimation type="Tween">
       <div className="h-full flex flex-col items-center justify-between shadow">
         <Image
-          src={process.env.NEXT_PUBLIC_UPLOAD_URL + image}
+          src={process.env.NEXT_PUBLIC_API_URL + image}
           height={200}
           width={200}
           alt=""

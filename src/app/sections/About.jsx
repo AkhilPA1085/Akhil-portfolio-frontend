@@ -7,7 +7,7 @@ import MotionAnimation from "../components/common/MotionAnimation";
 import { getData } from "../../../services/api";
 
 const About = async() => {
-  const jsondata = await getData("/services");
+  const jsondata = await getData("/api/services");
   const data = jsondata?.data;
   return (
     <div className="about pt-24">
